@@ -1,0 +1,93 @@
+/* Use a lovely cursive font for headlines */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fef9f3; /* fallback background color */
+  }
+  
+  /* Full-screen background overlay (optional) */
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1505845693531-5582f0c7f826?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    filter: blur(4px);
+    opacity: 0.4;
+    z-index: -1;
+  }
+  
+  /* Container for content to stand out from the background */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Headline styling */
+  .content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #d4145a;
+    margin-bottom: 1rem;
+  }
+  
+  /* Poem styling */
+  .poem {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem auto 2rem;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
+  /* Bouquet styling */
+  .flower-container {
+    margin: 1.5rem auto;
+  }
+  
+  .bouquet {
+    width: 200px;
+    animation: floatBouquet 3s ease-in-out infinite;
+  }
+  
+  /* Simple float animation for the bouquet */
+  @keyframes floatBouquet {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Gallery for pictures */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+  }
+  
+  .gallery img {
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Closing text */
+  .closing {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
