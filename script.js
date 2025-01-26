@@ -1,6 +1,6 @@
 // Example: A simple "Hello" alert (could be changed to any message)
 window.onload = function() {
-    alert("Volim te srce nemoj mi se sikirat ljubim.");
+    alert("Evo ti jedan znak paznje dok ucis volim teeeee!");
   };
   
   // If you'd like confetti, you can load a small confetti library from a CDN:
