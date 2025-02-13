@@ -23,14 +23,23 @@
   <div class="content">
     <h1>Volim te srce moje</h1>
     <p class="poem">
-      Bebi ondo na 20$ aBd mark my words i onda prodamo<br>
-      tad ti srce moje uredjujes kuhinju kakvu hoces.<br>
-       Npr ovako nesto ti napravimo<br>
-      <!-- Samo za tebe
-    </p> -->
+      <br>
+      <br>
+      Will you be my valentine?<br>
+    </p>
 
-    <!-- Animated bouquet of flowers (use an image, or an animated GIF) -->
-    <div class="flower-container">
+    <!-- Yes/No Buttons -->
+    <div class="button-container">
+      <button onclick="showLoveMessage()">Yes</button>
+      <button onclick="showSadMessage()">No</button>
+    </div>
+
+    <!-- Message display area -->
+    <p id="message" class="message"></p>
+
+    <!-- Bouquet Image (Hidden by Default) -->
+    <div id="flower-container" class="flower-container" style="display: none;">
+      <p class="flower-text">Evo ti jedan buket cvijeća 🌸💐</p>
       <img src="images/kitchen.jpg" alt="Flower Bouquet" class="bouquet" />
     </div>
 
@@ -45,7 +54,19 @@
     <p class="closing">Hvala ti sto si uvijek tu za mene,i sto postojis. Melek moj mali</p>
   </div>
 
-  <!-- Optional JavaScript for animations -->
-  <script src="script.js"></script>
+  <!-- JavaScript for button functionality -->
+  <script>
+    function showLoveMessage() {
+      document.getElementById("message").innerHTML = "I love you more than life ❤️";
+      document.getElementById("flower-container").style.display = "block"; // Show the bouquet
+    }
+
+    function showSadMessage() {
+      document.getElementById("message").innerHTML = "Nema ‘No’, samo ‘Yes’ je opcija 😘";
+      document.getElementById("flower-container").style.display = "none"; // Hide the bouquet
+    }
+  </script>
+
 </body>
 </html>
+
